@@ -1,0 +1,85 @@
+.HomeRight {
+  position: fixed;
+  /* background-color: #d7d9cc; */
+  background-color: transparent;
+  height: 100vh;
+  z-index: 600;
+  width: 45%;
+  margin-left: 65%;
+  transition: 1s ease-out;
+
+  display: grid;
+  grid-gap: 10px 10px;
+  grid-template-columns: 1fr 0.75fr;
+  grid-template-rows: 0.25fr 2fr 1fr 0.25fr;
+  grid-template-areas:
+    "mat mar"
+    "cen mar"
+    "bxr mar"
+    "mab mar";
+}
+
+.top {
+  grid-area: top;
+}
+
+.cen {
+  font-family: var(--header);
+  font-size: 60px;
+  border: 5px solid black;
+  border-radius: 15px;
+  grid-area: cen;
+
+  background-size: cover;
+  text-align: center;
+  background-color: var(--crust);
+  box-shadow: inset 5px 5px 5px var(--crust-light),
+    inset -5px -5px 5px var(--crust-shade);
+  transition: 0.5s ease-out;
+}
+
+.cen img {
+  height: 300px;
+  width: 300px;
+}
+
+.bxr {
+  border: 5px solid black;
+  grid-area: bxr;
+  display: inline-grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  background-color: var(--crust);
+  box-shadow: inset 5px 5px 5px var(--crust-light),
+    inset -5px -5px 5px var(--crust-shade);
+  transition: 0.75s ease-out;
+}
+
+.HomeRight button {
+  font-family: var(--header);
+  width: 50%;
+  border: none;
+  outline: none;
+  border-radius: 21px;
+  background: var(--crust);
+  box-shadow: 2px 2px 5px var(--btn-shade), -2px -2px 5px var(--btn-light);
+  height: 50px;
+  padding: 0 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+button:hover {
+  box-shadow: 3px 2px 3px var(--btn-shade), -3px -2px 3px var(--btn-light);
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}

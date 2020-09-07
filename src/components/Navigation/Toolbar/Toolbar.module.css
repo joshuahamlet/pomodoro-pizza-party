@@ -1,0 +1,73 @@
+.Toolbar {
+  font-family: var(--header);
+  font-size: 25px;
+  height: 85px;
+  width: 75%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 5px solid black;
+  border-radius: 20px;
+  background: #d4a375;
+  box-shadow: inset 7px 7px 5px #e9be96, inset -7px -7px 5px #cc9766;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: 1fr;
+  box-sizing: border-box;
+  z-index: 90;
+  transition: 0.7s ease-out;
+}
+
+.icon {
+  padding: 5px;
+  border-radius: 5px;
+  max-width: 45px;
+  margin: 5px 5px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.icon:hover {
+  box-shadow: 3px 2px 3px #aa825e, -3px -2px 3px #fec48c;
+  transform: translateY(-1px);
+}
+
+.icon:active {
+  box-shadow: none;
+  transform: translateY(2px);
+}
+
+.left {
+  grid-column: 1 / 2;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 15px;
+  font-weight: bold;
+}
+
+.right {
+  grid-column: 2 / 3;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  padding-right: 15px;
+}
+
+.Toolbar nav {
+  height: 0 auto;
+}
+
+.Logo {
+  height: 80%;
+}
+
+@media (max-width: 499px) {
+  .DesktopOnly {
+    display: none;
+  }
+}

@@ -1,0 +1,18 @@
+.PizzaParty {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bkLight {
+  background-image: url(../../assets/PizzaBackgroundLight.jpg);
+  background-size: cover;
+  background-color: white;
+}
+
+.bkDark {
+  background-image: url(../../assets/PizzaBackgroundDark.jpg);
+  background-size: cover;
+  background-color: black;
+}

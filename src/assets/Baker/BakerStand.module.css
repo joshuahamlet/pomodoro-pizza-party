@@ -1,0 +1,18 @@
+@keyframes play144 {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: -73728px 0px;
+  }
+}
+.shapeshifter {
+  background-image: url("./BakerStand.svg");
+  animation-duration: 2400ms;
+  animation-timing-function: steps(144);
+  width: 512px;
+  height: 512px;
+  background-repeat: no-repeat;
+  animation-name: play144;
+  animation-iteration-count: infinite;
+}

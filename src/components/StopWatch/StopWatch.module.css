@@ -1,0 +1,81 @@
+.StopWatch {
+  height: auto;
+  width: 75%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 5px solid black;
+  border-radius: 20px;
+  background: #d4a375;
+  box-shadow: inset 7px 7px 5px #e9be96, inset -7px -7px 5px #cc9766;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+  grid-template-rows: 0.25fr 1fr 1fr;
+  align-items: center;
+  padding: 20px 20px;
+  box-sizing: border-box;
+  z-index: 90;
+  transition: 1.3s ease-out;
+}
+
+.Title {
+  text-align: center;
+  margin: 10px;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+
+.Timer {
+  color: white;
+  text-shadow: 10px 4px 5px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 80%;
+  border-radius: 21px;
+  background: #d4a375;
+  box-shadow: inset 5px 5px 8px #aa825e, inset -5px -5px 8px #fec48c;
+  text-align: center;
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+}
+
+.Start {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  height: 60%;
+  width: 60%;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+.Quit {
+  font-size: 16px;
+  font-weight: bold;
+  height: 60%;
+  width: 60%;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+button {
+  font-family: var(--header);
+  border: none;
+  outline: none;
+  border-radius: 21px;
+  background: #d4a375;
+  box-shadow: 2px 2px 5px #aa825e, -2px -2px 5px #fec48c;
+  transition: all 0.4s;
+}
+
+button:hover {
+  box-shadow: 3px 2px 3px #aa825e, -3px -2px 3px #fec48c;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}

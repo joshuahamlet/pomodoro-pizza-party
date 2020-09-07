@@ -1,0 +1,148 @@
+.Modal {
+  position: fixed;
+  height: 100vh;
+  z-index: 500;
+  border: 5px solid black;
+  border-radius: 20px;
+  background: #d4a375;
+  box-shadow: inset 7px 7px 5px #e9be96, inset -7px -7px 5px #cc9766;
+  padding: 16px;
+  left: 15%;
+  top: 20%;
+  box-sizing: border-box;
+  transition: all 0.5s ease-out;
+}
+
+.ModalPopUp {
+  display: flex;
+  flex-direction: column;
+  perspective: 500px;
+  position: fixed;
+  height: 400px;
+  width: 365px;
+  z-index: 9001;
+  left: 45vw;
+  top: 40vh;
+  transition: all 0.5s ease-out;
+}
+
+.ModalPopUpFront {
+  height: 400px;
+  width: 365px;
+  border: 5px solid black;
+  border-radius: 20px;
+  background: #d4a375;
+  box-shadow: inset 7px 7px 5px #e9be96, inset -7px -7px 5px #cc9766;
+  padding: 16px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+  transition: all 0.8s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+}
+
+.ModalPopUpBack {
+  height: 400px;
+  width: 365px;
+  border: 5px solid black;
+  border-radius: 20px;
+  background: #d4a375;
+  box-shadow: inset 7px 7px 5px #e9be96, inset -7px -7px 5px #cc9766;
+  padding: 16px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+
+  transition: all 0.8s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+label {
+  font-family: "Amatic SC", cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  margin-left: 30px;
+  transition: all 0.3s;
+}
+
+input:placeholder-shown + label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-3rem);
+}
+
+.itemAddBox {
+  font-family: "Amatic SC", cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  background-color: #d7d9cc;
+  border: 0;
+  width: 250px;
+  height: 50px;
+  padding: 0 22px;
+  margin: 5px;
+  border-radius: 15px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.todoItem {
+  font-family: "Amatic SC", cursive;
+  font-weight: bolder;
+  font-size: 25px;
+  background-color: #f3f5e6;
+  border: 2px solid black;
+  width: 250px;
+  height: 50px;
+  padding: 0 20px;
+  margin: 5px;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+button {
+  border: none;
+  outline: none;
+  border-radius: 21px;
+  background: #d4a375;
+  box-shadow: 2px 2px 5px #aa825e, -2px -2px 5px #fec48c;
+  height: 50px;
+  padding: 0 20px;
+  margin: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+button:hover {
+  box-shadow: 3px 2px 3px #aa825e, -3px -2px 3px #fec48c;
+  transform: translateY(-2px);
+}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(3px);
+}
+
+li {
+  list-style-type: none;
+}
+
+@media (min-width: 600px) {
+  .Modal {
+    width: 600px;
+    left: 5%;
+  }
+}

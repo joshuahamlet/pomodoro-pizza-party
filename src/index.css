@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  /* background-image: url("https://previews.123rf.com/images/balabolka/balabolka1609/balabolka160900391/63236480-cartoon-cute-hand-drawn-pizza-seamless-pattern-line-art-with-lots-of-objects-background-endless-funn.jpg"); */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --moustache: #a8503c;
+  --cheek: #f98084;
+  --face-shade: #e3b098;
+  --face: #fbc4ac;
+  --hat-shade-2: #bdbfb4;
+  --hat-shade: #d7d9cc;
+  --hat: #f3f5e6;
+  --crust-light: #e9be96;
+  --crust: #d4a375;
+  --crust-shade: #cc9766;
+  --btn-light: #fec48c;
+  --btn-shade: #aa825e;
+
+  --header: "Fredericka the Great", cursive;
+  --body: "Amatic SC", cursive;
+}
